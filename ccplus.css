@@ -1,0 +1,64 @@
+/*
+Title:   Using lightweight optimized SVG images for Creative Commons Plus logo button
+Author:  David Hoicka
+Website: https://github.com/david-hoicka/creative-commons-plus-svg-lightweight/
+*/
+
+.CCPlus-Logo-small {
+  /*display: block;*/
+  width: 90px;
+  height: 30px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image: url(creative-commons-plus-ccplus.svg);
+  /*background: url(creative-commons-plus-ccplus.svg);*/
+  /*background-size: 90px 30px;*/
+}
+.CCPlus-Logo-large {
+  /*display: block;*/
+  width: 14em;
+  height: 5em;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image: url(creative-commons-plus-ccplus.svg);
+  /*background: url(creative-commons-plus-ccplus.svg);*/
+  /*background-size: 90px 30px;*/
+}
+/* file size: 4.3ko | optimized file size: 4.3ko | base64 size: 5.7ko */
+.ccplus-base64, .smaller {
+  width: 90px;
+  height: 30px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image:
+   url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiDQogICAgIHdpZHRoPSI5MCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDkwIDMwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1heCBtZWV0Ij4NCjx0aXRsZT5DcmVhdGl2ZSBDb21tb25zIFBsdXMgQ0NQbHVzIENDKyBDb21tZXJjaWFsIExpY2Vuc2UgTG9nbzwvdGl0bGU+DQo8ZGVzYz5BdHRyaWJ1dGlvbjogQ3JlYXRpdmVDb21tb25zLm9yZywgQXV0aG9yIENyZWF0b3IgZm9yIHRoaXMgbG9nbyBidXR0b246IERhdmlkIEhvaWNrYSBodHRwOi8vZ2l0aHViLmNvbS9kYXZpZC1ob2lja2E8L2Rlc2M+DQo8ZGVmcz4NCiAgPGxpbmVhckdyYWRpZW50IGlkPSJHcmFkaWVudC0xIj4NCiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSJHb2xkZW5Sb2QgIiAvPg0KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSJXaGVhdCIgLz4NCiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IkdvbGRlblJvZCIgLz4NCiAgPC9saW5lYXJHcmFkaWVudD4NCjwvZGVmcz4NCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI5MCIgaGVpZ2h0PSIyMiIgZmlsbD0gInVybCgjR3JhZGllbnQtMSkiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMXB4IiAvPg0KPHJlY3QgeD0iMCIgeT0iMjIiIHdpZHRoPSI5MCIgaGVpZ2h0PSI4IiBmaWxsPSAiYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMXB4IiAvPg0KPHRleHQgeD0iNSIgeT0iMjAiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjI4cHgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCIgPis8L3RleHQ+DQo8dGV4dCB4PSIyNCIgeT0iMTUiIGZpbGw9ImJsYWNrIiBmb250LXNpemU9IjEycHgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIj5DT01QQU5ZPC90ZXh0Pg0KPHRleHQgeD0iNSIgeT0iMjgiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjdweCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiPkNPTU1FUkNJQUwgTElDRU5TRTwvdGV4dD4NCjwvc3ZnPg0K);
+   /*border-width: 1px;
+   border-color: black;*/
+   /*background-color: Pink;*/
+}
+
+.larger {
+  width: 14em;
+  height: 5em;
+}
+
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  /*padding-left: 20 px;
+  margin-left: 20 px;
+  border-left: 20 px;*/
+  max-width: 70%;
+  margin: 0 auto;
+
+
+
+
+}
+
+
+h1, h2 {
+  /*background-color: Pink;*/
+  font-family: sans-serif;
+
+}
