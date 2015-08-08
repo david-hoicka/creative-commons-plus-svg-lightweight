@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Using lightweight optimized SVG images for Creative Commons Plus logo button</title>
+  <link rel="publisher author" href="//plus.google.com/+DavidHoicka">
+  <link rel="stylesheet" href="ccplus.css">
+  </head
+  <body>
+    <h1>Using lightweight optimized SVG images for Creative Commons Plus logo button</h1>
+    <p><em>By <a href="//DavidHoicka.net" rel="author publisher" target="_blank">David Hoicka</a></em></p>
+    <p>This article outlines 4 ways to optimize SVG image logos for Creative Commons Plus (CCPlus, CC+).</p>
+    <p>Why use SVG? SVG images often use smaller files. SVGs scale readily as vector images. SVGs can be programmatically controled and modified.</p>
+    <p>The Creative Commons Plus SVG included here is optimized at about 1.1 kb, smaller size for faster HTML page loading than some commonly used Creative Commons Plus images.</p>
+    <p>Kindly refer to page source view for code details.</p>
+    <ol>
+      <li><a href="#fastest-single-page-loads">Example 1. HTML5 Inline SVG Image Element</a> </li>
+      <li><a href="#SVG-using-&lt;img&gt;-tag">Example 2. Include SVG using &lt;img&gt; tag</a> </li>
+      <li><a href="#SVG-as-CSS-Background-Image">Example 3. Using SVG as a CSS Background-Image</a> </li>
+      <li><a href="#fastest-multiple-page-loads">Example 4. Using Data URI's for SVG images</a> </li>
+      <li><a href="#Summary-Lightweight-Optimized-SVGs">Summary: Lightweight Optimized SVGs for Creative Commons Plus</a> </li>
+    </ol>
+    <h2 id="fastest-single-page-loads">Example 1. HTML5 Inline SVG Image Element</h2>
+    <p>In this first example, the SVG logo for Creative Commons Plus is placed inline as an HTML5 &lt;SVG&gt; element:</p>
+    <ul>
+      <li><em>Pro</em>:  easy to install, and saves HTML request as SVG code is embedded in HTML5 text.</li>
+      <li><em>Con</em>:  Obscures flow of code on HTML page with distracting SVG XML text. If used on more than one page, is downloaded for every page view, i.e. non-cacheable.</li>
+    </ul>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="90" height="30" viewBox="0 0 90 30" preserveAspectRatio="xMinYMax meet" aria-labelledby="title desc" role="img">
+    <title id="title">Creative Commons Plus CCPlus CC+ Commercial License Logo</title>
+    <desc id="desc">Attribution: https://wiki.creativecommons.org/wiki/CCPlus, Author Creator for this logo button: David Hoicka http://github.com/david-hoicka</desc>
+    <defs>
+      <linearGradient id="Gradient-1">
+        <stop offset="0%" stop-color="GoldenRod " />
+        <stop offset="50%" stop-color="Wheat" />
+        <stop offset="100%" stop-color="GoldenRod" />
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="90" height="22" fill= "url(#Gradient-1)" stroke="black" stroke-width="1px" />
+    <rect x="0" y="22" width="90" height="8" fill= "black" stroke="black" stroke-width="1px" />
+    <text x="5" y="20" fill="white" font-size="28px" font-family="sans-serif" font-weight="bold" >+</text>
+    <text x="24" y="15" fill="black" font-size="12px" font-family="sans-serif">COMPANY</text>
+    <text x="5" y="28" fill="white" font-size="7px" font-family="sans-serif">COMMERCIAL LICENSE</text>
+  </svg>
+  <br><br>
+  <h2 id="SVG-using-&lt;img&gt;-tag">Example 2. Include SVG using &lt;img&gt; tag</h2>
+  <p>  In this second example, the SVG logo for Creative Commons Plus is inserted from a separate SVG file using an HTML5 &lt;IMG&gt; element:</p>
+  <ul>
+    <li><em>Pro</em>:  also easy to install. Generally requires only one HTTP request as SVG file can be cached.</li>
+    <li><em>Con</em>:  requires at least one HTTP request, which can have some effect on page load time.</li>
+  </ul>
+  <img src="creative-commons-plus-ccplus.svg" alt="Creative Commons Plus CCPlus CC+ logo">
+  <br><br>
+  <h2 id="SVG-as-CSS-Background-Image">Example 3. Using SVG as a CSS Background-Image</h2>
+  <p>  In this third example, the SVG logo for Creative Commons Plus is inserted as a background-image using CSS:</p>
+  <ul>
+    <li><em>Pro</em>:  ok to install. Generally requires only one HTTP request as SVG file can be cached.</li>
+    <li><em>Con</em>:  requires at least one HTTP request, which can have some effect on page load time.</li>
+  </ul>
+  <p>The SVG image size can be set using CSS.  For example, this image size is set to 90px x 30px using CSS:</p>
+  <div class="CCPlus-Logo-small"></div>
+  <p>Next, the image size can be changed by setting CSS width and height to 14em x 5em, and the enlarged SVG image generally remains crisply rendered:</p>
+  <div class="CCPlus-Logo-large"></div>
+  <br><br>
+  <h2 id="fastest-multiple-page-loads">Example 4. Using Data URI's for SVG images</h2>
+  <p>  In this fourth example, the SVG logo for Creative Commons Plus is inserted as a background-image using a base64 data-URI in CSS.  One would think that an unencoded SVG would work as a data-URI; however, browser support for unencoded SVG data-URIs is variable.</p>
+  <ul>
+    <li><em>Pro</em>:  Saves HTML request as SVG code is embedded in CSS text.</li>
+    <li><em>Con</em>:  Not so easy to install. Careful attention to formatting and punctuation around data-URI is required. A helpful website for creating CSS base64 background images from SVG is: http://b64.io/.  Browser may take a few more milliseconds to render the image, probably imperceptable if a few images used.</li>
+  </ul>
+  <p>As a further point of interest, this Example 4 creates a <em>clickable</em> background-image link:</p>
+  <a href="https://github.com/david-hoicka/creative-commons-plus-svg-lightweight/" alt="Optimized SVG logo for Creative Commons Plus" target="_blank">
+    <div class="CCPlus-base64 smaller"></div>
+  </a>
+  <p>Similarly, the SVG image size can be changed by setting CSS width and height to 14em x 5em, and the enlarged SVG image generally shows as crisply rendered:</p>
+  <a href="https://github.com/david-hoicka/creative-commons-plus-svg-lightweight/" alt="Optimized SVG logo for Creative Commons Plus" target="_blank">
+    <div class="CCPlus-base64 larger"></div>
+  </a>
+  <br><br>
+  <h2 id="Summary-Lightweight-Optimized-SVGs">Summary: Lightweight Optimized SVGs for Creative Commons Plus</h2>
+  <p>As shown above, there are several common options for SVGs in HTML5 webpages, each with pros and cons.</p>
+  <p>For fastest one-time page loads, optimized inline SVG may be best. See <a href="#fastest-single-page-loads">Example 1</a></p>
+  <p>For fastest page loads where an image is repeated a number of times on a website, the SVG data-URI method is likely best. See <a href="#fastest-multiple-page-loads">Example 4</a>.</p>
+  <em>David Hoicka</em>
+  <br><br>
+</body>
+</html>
