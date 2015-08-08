@@ -1,7 +1,6 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-     width="90" height="30" viewBox="0 0 90 30" preserveAspectRatio="xMinYMax meet">
-<title>Creative Commons Plus CCPlus CC+ Commercial License Logo</title>
-<desc>Attribution: CreativeCommons.org, Author Creator for this logo button: David Hoicka http://github.com/david-hoicka</desc>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="90" height="30" viewBox="0 0 90 30" preserveAspectRatio="xMinYMax meet" aria-labelledby="title desc" role="img">
+<title id="title">Creative Commons Plus CCPlus CC+ Commercial License Logo</title>
+<desc id="desc">Attribution: https://wiki.creativecommons.org/wiki/CCPlus, Author Creator for this logo button: David Hoicka http://github.com/david-hoicka</desc>
 <defs>
   <linearGradient id="Gradient-1">
     <stop offset="0%" stop-color="GoldenRod " />

@@ -20,7 +20,7 @@ Website: https://github.com/david-hoicka/creative-commons-plus-svg-lightweight/
   background-image: url(creative-commons-plus-ccplus.svg);
 }
 
-.ccplus-base64, .smaller {
+.CCPlus-base64, .smaller {
   width: 90px;
   height: 30px;
   background-size: 100% auto;
