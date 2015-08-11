@@ -13,7 +13,6 @@
 
   <meta property="og:title" content="Lightweight SVG for Creative Commons Plus CCPlus and faster Pagespeed, by David Hoicka" >
   <meta property="og:description" content="How to improve your Pagespeed with Optimized SVG for Creative Commons Plus, including Base64 Data URI option and improved accessibility" >
-  <!-- <meta property="og:site_name" content="David Hoicka GitHub"/> -->
   <meta property="og:type" content="article" >  <!-- article or blog required by pinterest -->
   <meta property="article:author" content="1331385084" >
   <meta property="article:publisher" content="http://www.facebook.com/david.hoicka" >
@@ -115,6 +114,7 @@
       <p>This article outlines 4 ways to optimize SVG image logos for Creative Commons Plus (CCPlus, CC+).</p>
       <p>Why use SVG? SVG images often use smaller files. SVGs scale readily as vector images. SVGs can be programmatically controlled and modified.</p>
       <p>The Creative Commons Plus SVG included here is optimized at about 1.1 kb, smaller size for faster HTML page loading than some commonly used Creative Commons Plus images.</p>
+      <p>In addition, although Base64 is generally slightly larger than the original SVG, using Base64 CSS Data-URIs can eliminate one or more HTML requests, as the image data can be cached in the CSS, thus speeding page load and Pagespeed.</p>
       <p>Kindly refer to page source view for code details.</p>
       <ol>
         <li><a href="#fastest-single-page-loads">Example 1. HTML5 Inline SVG Image Element</a> </li>
@@ -122,7 +122,7 @@
         <li><a href="#SVG-as-CSS-Background-Image">Example 3. Using SVG as a CSS Background-Image</a> </li>
         <li><a href="#fastest-multiple-page-loads">Example 4. Using Base64 Data URI's for SVG images</a> </li>
         <li><a href="#Summary-Lightweight-Optimized-SVGs">Summary: Use Lightweight Optimized SVGs and Base64 Data-URIs for Creative Commons Plus</a> </li>
-        <li><a href="#Summary-Lightweight-Optimized-SVGs">Downloads: Optimized SVGs and Base64 Data-URIs for Creative Commons Plus</a> </li>
+        <li><a href="#svg-ccplus-downloads">Downloads: Optimized SVGs and Base64 Data-URIs for Creative Commons Plus</a> </li>
       </ol>
       <h2 class="inner" id="fastest-single-page-loads">Example 1. HTML5 Inline SVG Image Element</h2>
       <p>In this first example, the SVG logo for Creative Commons Plus is placed inline as an HTML5 &lt;SVG&gt; element:</p>
@@ -183,8 +183,12 @@
       <br><br>
       <h2 id="Summary-Lightweight-Optimized-SVGs">Summary: Use Lightweight Optimized SVGs and Base64 Data-URIs for Creative Commons Plu</h2>
       <p>As shown above, there are several common options for SVGs in HTML5 webpages, each with pros and cons.</p>
-      <p>For fastest one-time page loads, optimized inline SVG may be best. See <a href="#fastest-single-page-loads">Example 1</a></p>
-      <p>For fastest page loads where an image is repeated a number of times on a website, the SVG data-URI method is likely best. See <a href="#fastest-multiple-page-loads">Example 4</a>.</p>
+      <ul>
+        <li>For fastest one-time page loads, optimized inline SVG may be best. See <a href="#fastest-single-page-loads">Example 1</a></p></li>
+        <li>For fastest page loads where an image is repeated a number of times on a website, the SVG data-URI method is likely best. See <a href="#fastest-multiple-page-loads">Example 4</a>.</p></li>
+      </ul>
+
+<p>Here are the download links:</p>
 
       <ul id="svg-ccplus-downloads">
         <li>Click to download SVG: <a href="creative-commons-plus-ccplus.svg" download target="_blank">creative-commons-plus-ccplus.svg</a></li>
