@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#" ><!-- itemref="footer" -->
 <html>
 <head>
   <meta charset='utf-8'>
@@ -57,7 +58,25 @@
   }
   </script>
 
+  <meta property="og:title" content="Lightweight SVG for Creative Commons Plus CCPlus and faster Pagespeed, by David Hoicka" >
+  <meta property="og:description" content="How to improve your Pagespeed with Optimized SVG for Creative Commons Plus, including Base64 Data URI option and improved accessibility" >
+  <meta property="og:type" content="article" >  <!-- article or blog required by pinterest -->
+  <meta property="article:author" content="David Hoicka" >
+  <meta property="article:publisher" content="http://www.facebook.com/david.hoicka" >
+  <meta property="og:url" content="http://david-hoicka.github.io/creative-commons-plus-svg-lightweight/" >   <!-- canonical url for page -->
+  <meta property="og:site_name" content="Lightweight SVG for Creative Commons Plus CCPlus and faster Pagespeed, by David Hoicka" >
+  <meta property="og:image" content="http://david-hoicka.github.io/creative-commons-plus-svg-lightweight/creative-commons-plus-ccplus.svg" > <!-- up to 6 images -->
+  <meta property="og:image" content="http://david-hoicka.github.io/creative-commons-plus-svg-lightweight/creative-commons-plus-ccplus.png" > <!-- up to 6 images -->
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lightweight SVG for Creative Commons Plus CCPlus and faster Pagespeed, by David Hoicka">
+  <meta name="twitter:description" content="How to improve your Pagespeed with Optimized SVG for Creative Commons Plus, including Base64 Data URI option and improved accessibility">
+  <meta name="twitter:image" content="http://david-hoicka.github.io/creative-commons-plus-svg-lightweight/creative-commons-plus-ccplus.svg" >   <!-- URL of image -->
+  <meta name="twitter:creator" content="@DavidHoicka">
+  <meta name="twitter:site" content="@DavidHoicka">
+  <meta name="twitter:url" content="http://david-hoicka.github.io/creative-commons-plus-svg-lightweight/" >
+
+  <meta name="robots" content="index,follow" >
 
 </head>
 
@@ -85,12 +104,9 @@
 
       <p><em>By <a href="http://DavidHoicka.net" rel="author publisher" target="_blank">David Hoicka</a></em></p>
       <p>See GitHub Page:  <a href="https://github.com/david-hoicka/creative-commons-plus-svg-lightweight" title="Creative Commons Plus Optimized SVG" target="_blank">https://github.com/david-hoicka/creative-commons-plus-svg-lightweight</a></p>
-      <ul>
-        <li>Click to download SVG: <a href="creative-commons-plus-ccplus.svg" download target="_blank">creative-commons-plus-ccplus.svg</a></li>
-        <li>Click to download PNG: <a href="creative-commons-plus-ccplus.png" download target="_blank">creative-commons-plus-ccplus.png</a></li>
-        <li>Click to download base64 CSS: <a href="ccplus.css" download>ccplus.css</a></li>
-      </ul>
 
+      <p>This article discusses how to improve Pagespeed website loading for Creative Commons Plus (CCPlus, CC+) by using optimized SVGs and Base64 Data-URIs.
+      <p>Accessibility is also improved using ARIA attributes and tags.</p>
       <p>This article outlines 4 ways to optimize SVG image logos for Creative Commons Plus (CCPlus, CC+).</p>
       <p>Why use SVG? SVG images often use smaller files. SVGs scale readily as vector images. SVGs can be programmatically controlled and modified.</p>
       <p>The Creative Commons Plus SVG included here is optimized at about 1.1 kb, smaller size for faster HTML page loading than some commonly used Creative Commons Plus images.</p>
@@ -100,7 +116,8 @@
         <li><a href="#SVG-using-&lt;img&gt;-tag">Example 2. Include SVG using &lt;img&gt; tag</a> </li>
         <li><a href="#SVG-as-CSS-Background-Image">Example 3. Using SVG as a CSS Background-Image</a> </li>
         <li><a href="#fastest-multiple-page-loads">Example 4. Using Base64 Data URI's for SVG images</a> </li>
-        <li><a href="#Summary-Lightweight-Optimized-SVGs">Summary: Lightweight Optimized SVGs for Creative Commons Plus</a> </li>
+        <li><a href="#Summary-Lightweight-Optimized-SVGs">Summary: Use Lightweight Optimized SVGs and Base64 Data-URIs for Creative Commons Plus</a> </li>
+        <li><a href="#Summary-Lightweight-Optimized-SVGs">Downloads: Optimized SVGs and Base64 Data-URIs for Creative Commons Plus</a> </li>
       </ol>
       <h2 class="inner" id="fastest-single-page-loads">Example 1. HTML5 Inline SVG Image Element</h2>
       <p>In this first example, the SVG logo for Creative Commons Plus is placed inline as an HTML5 &lt;SVG&gt; element:</p>
@@ -159,10 +176,17 @@
         <div class="CCPlus-base64 larger"></div>
       </a>
       <br><br>
-      <h2 id="Summary-Lightweight-Optimized-SVGs">Summary: Lightweight Optimized SVGs for Creative Commons Plus</h2>
+      <h2 id="Summary-Lightweight-Optimized-SVGs">Summary: Use Lightweight Optimized SVGs and Base64 Data-URIs for Creative Commons Plu</h2>
       <p>As shown above, there are several common options for SVGs in HTML5 webpages, each with pros and cons.</p>
       <p>For fastest one-time page loads, optimized inline SVG may be best. See <a href="#fastest-single-page-loads">Example 1</a></p>
       <p>For fastest page loads where an image is repeated a number of times on a website, the SVG data-URI method is likely best. See <a href="#fastest-multiple-page-loads">Example 4</a>.</p>
+
+      <ul id="svg-ccplus-downloads">
+        <li>Click to download SVG: <a href="creative-commons-plus-ccplus.svg" download target="_blank">creative-commons-plus-ccplus.svg</a></li>
+        <li>Click to download PNG: <a href="creative-commons-plus-ccplus.png" download target="_blank">creative-commons-plus-ccplus.png</a></li>
+        <li>Click to download base64 CSS: <a href="ccplus.css" download>ccplus.css</a></li>
+      </ul>
+
       <em>David Hoicka</em>
       <br><br>
 
