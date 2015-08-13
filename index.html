@@ -55,11 +55,11 @@
   		"url": "http://david-hoicka.github.io/creative-commons-plus-svg-lightweight/",
   		"image": "http://david-hoicka.github.io/creative-commons-plus-svg-lightweight/creative-commons-plus-ccplus.svg",
   		"thumbnailUrl": "http://david-hoicka.github.io/creative-commons-plus-svg-lightweight/creative-commons-plus-ccplus.png",
-      "articleSection": "Example 1. HTML5 Inline SVG Image Element",
-      "articleSection": "Example 2. Include SVG using &lt;img&gt; tag",
-      "articleSection": "Example 3. Using SVG as a CSS Background-Image",
-      "articleSection": "Example 4. Using Base64 Data URI's for SVG images",
-  		"articleSection": "Summary: Lightweight Optimized SVGs for Creative Commons Plus",
+      "articleSection": ["Example 1. HTML5 Inline SVG Image Element",
+                         "Example 2. Include SVG using &lt;img&gt; tag",
+                         "Example 3. Using SVG as a CSS Background-Image",
+                         "Example 4. Using Base64 Data URIs for SVG images",
+  		                   "Summary: Use Lightweight Optimized SVGs and Base64 Data-URIs for Creative Commons Plus"],
   		"datePublished":  "2015-08-09",
   		"headline":  "Lightweight SVG for Creative Commons Plus CCPlus and faster Pagespeed, by David Hoicka",
   		"author": ["David Hoicka"],
@@ -73,6 +73,7 @@
    	"name": "David Hoicka",
    	"url": "http://DavidHoicka.net/",
    	"sameAs": [ "https://github.com/david-hoicka",
+      "https://gist.github.com/david-hoicka",
       "http://codepen.io/david-hoicka/",
       "https://www.facebook.com/david.hoicka",
    	  "https://www.linkedin.com/in/davidhoicka",
@@ -120,7 +121,7 @@
         <li><a href="#fastest-single-page-loads">Example 1. HTML5 Inline SVG Image Element</a> </li>
         <li><a href="#SVG-using-&lt;img&gt;-tag">Example 2. Include SVG using &lt;img&gt; tag</a> </li>
         <li><a href="#SVG-as-CSS-Background-Image">Example 3. Using SVG as a CSS Background-Image</a> </li>
-        <li><a href="#fastest-multiple-page-loads">Example 4. Using Base64 Data URI's for SVG images</a> </li>
+        <li><a href="#fastest-multiple-page-loads">Example 4. Using Base64 Data URIs for SVG images</a> </li>
         <li><a href="#Summary-Lightweight-Optimized-SVGs">Summary: Use Lightweight Optimized SVGs and Base64 Data-URIs for Creative Commons Plus</a> </li>
         <li><a href="#svg-ccplus-downloads">Downloads: Optimized SVGs and Base64 Data-URIs for Creative Commons Plus</a> </li>
       </ol>
@@ -166,7 +167,7 @@
       <p>Next, the image size can be changed by setting CSS width and height to 14em x 5em, and the enlarged SVG image generally remains crisply rendered:</p>
       <div class="CCPlus-Logo-large"></div>
       <br><br>
-      <h2 id="fastest-multiple-page-loads">Example 4. Using Data URI's for SVG images</h2>
+      <h2 id="fastest-multiple-page-loads">Example 4. Using Base64 Data URIs for SVG images</h2>
       <p>  In this fourth example, the SVG logo for Creative Commons Plus is inserted as a background-image using a base64 data-URI in CSS.  One would think that an unencoded SVG would work as a data-URI; however, browser support for unencoded SVG data-URIs is variable.</p>
       <ul>
         <li><em>Pro</em>:  Saves HTML request as SVG code is embedded in CSS text.</li>
@@ -181,7 +182,7 @@
         <div class="CCPlus-base64 larger"></div>
       </a>
       <br><br>
-      <h2 id="Summary-Lightweight-Optimized-SVGs">Summary: Use Lightweight Optimized SVGs and Base64 Data-URIs for Creative Commons Plu</h2>
+      <h2 id="Summary-Lightweight-Optimized-SVGs">Summary: Use Lightweight Optimized SVGs and Base64 Data-URIs for Creative Commons Plus</h2>
       <p>As shown above, there are several common options for SVGs in HTML5 webpages, each with pros and cons.</p>
       <ul>
         <li>For fastest one-time page loads, optimized inline SVG may be best. See <a href="#fastest-single-page-loads">Example 1</a></p></li>
